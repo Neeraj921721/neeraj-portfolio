@@ -1,0 +1,18 @@
+{
+    "main": "app.mjs",
+    "scripts": {
+        "start": "nodemon app.mjs",
+        "compile:sass": "sass --style=compressed public/styles/:public/styles/",
+        "build": "npm install && npm run compile:sass"
+    },
+    "author": "Neeraj Kumar Gond",
+    "license": "ISC",
+    "devDependencies": {
+        "chokidar": "^3.6.0",
+        "nodemon": "^3.1.0",
+        "sass": "^1.83.0"
+    },
+    "dependencies": {
+        "express": "^4.19.2"
+    }
+}
